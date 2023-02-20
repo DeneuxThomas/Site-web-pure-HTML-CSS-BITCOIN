@@ -1,0 +1,465 @@
+/* police de caractère */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* normalise tout pour plus de practicité*/
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body {
+    /* change le fond */
+    background-image: url("../img/360_F_157147683_jFG0mAcpHfljOMHHhKKvUKgq6Y2dSn91.jpg");
+    height: 100%;
+}
+
+main {
+    /* Le main mettre la couleur de fond à 80% de la largeur de la page avec un minimum de 500px de large et un maximum de 1000px*/
+    background-color: #FFECB7;
+    /* Va prendre 80% de l'écran avec une largeur minimal de 500 pixels à 1000 pixels */
+    min-width: 350px;
+    max-width: 750px;
+    width: 80%;
+    /* Ajoute et gère le cadre */
+    border-style: solid;
+    border-color: #C16300;
+    border-width: medium;
+    /* Cadre arrondis */
+    border-radius: 10px;
+    /* Définit les marges gauche et basse intérieur */
+    padding: 15px;
+    margin: auto;
+    /* Le menu apparait progressivement */
+    opacity: 0;
+    animation: main-anim 1s ease-in-out 0.5s forwards;
+}
+
+.menu {
+    /* S'occupe du bandeau */
+    background-color: #FFECB7;
+    height: 70px;
+    line-height: 70px;
+    margin-bottom: 70px;
+    border-bottom-style: solid;
+    border-bottom-width: medium;
+    border-bottom-color: #C16300;
+}
+
+.taillebandeau {
+    /* Place l'élément au centre */
+    margin: auto;
+}
+
+.menu-gauche {
+    /* La partie gauche du bandeau */
+    /* Place à gauche la class suivante */
+    float: left;
+    margin-left: 10%;
+    /* Gère pour l'animation */
+    animation-duration: 2s;
+    animation-name: menu-g;
+}
+
+.menu-droit-grand {
+    /* Place le menu à droite */
+    float: right;
+    margin-right: 10%;
+    /* Pour l'animation du menu */
+    animation-duration: 2s;
+    animation-name: menu-d;
+}
+
+.menu-droit-grand > a {
+    /* S'occupe de l'interieur du menu */
+    color: saddlebrown;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: lato;
+    font-weight: 700;
+    font-size: 15px;
+    margin: 0 8px;
+}
+
+.menu-lien {
+    /* Pour les animations du menu */
+    transition: all 0.3s ease-in-out;
+    border-bottom: 2px solid transparent;
+}
+
+.menu-lien:hover {
+    padding-bottom: 3px;
+    border-bottom: 2px solid saddlebrown;
+}
+
+section {
+    margin-bottom: 10px;
+}
+
+h1 {
+    /* Police de caractère */
+    font-family: "Roboto";
+    /* Caractère gras */
+    font-weight: 900;
+    /* Lettre majuscule */
+    text-transform: uppercase;
+    font-size: 35px;
+    /* Espace entre les lettres */
+    letter-spacing: 1px;
+    color: saddlebrown;
+    /* Pour que le texte soit centré*/
+    height: 70px;
+    line-height: 70px;
+    /* Ombre du texte */
+    text-shadow: 0 0 3px saddlebrown;
+}
+
+#b {
+    /* Le B spécial du Bitcoin */
+    font-size: 40px;
+    color: #C16300;
+}
+
+h2 {
+    /* S'occupe du sous-titre */
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 27px;
+    font-family: "Roboto";
+    color: saddlebrown;
+    margin-bottom: -10px;
+}
+
+h3 {
+    /* Pour des titres des parties*/
+    font-family: "Lato";
+    font-weight: 600;
+    padding-left: 5px;
+    margin-bottom: 7px;
+    margin-top: 30px;
+}
+
+p {
+    /* Les paragraphes */
+    margin: 15px 5px;
+    text-align: justify;
+    font-family: "Lato";
+    padding-left: 10px;
+}
+
+details {
+    /* Le En savoir plus pour dérouler le texte */
+    color: saddlebrown;
+    font-size: 1.1em;
+    font-family: "Lato";
+}
+
+details p {
+    /* Les paragraphes du En savoir plus */
+    text-align: justify;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 10px;
+    color: black;
+    font-size: 0.9em;
+}
+
+ul {
+    margin-left: 20px;
+    color: black;
+}
+
+ul > li > p {
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Lato";
+    color: black;
+    font-size: 1.1em;
+}
+
+.sources {
+    padding-bottom: 15px;
+}
+
+
+/* Les boutons de l'index */
+
+.bouton {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Lato";
+    font-weight: 400;
+    color: white;
+    font-size: 1.2em;
+    background-color: #C16300;
+    padding: 15px 35px;
+    border: solid;
+    border-radius: 5px;
+}
+
+
+/* S'occupe de l'animation des bouton */
+
+#a-partie1:hover {
+    transition: all 0.5s ease-in-out;
+    color: black;
+    font-size: 1.4em;
+}
+
+
+/* S'occupe de l'animation des bouton */
+
+#a-partie2:hover {
+    transition: all 0.5s ease-in-out;
+    color: black;
+    font-size: 1.4em;
+}
+
+
+/* S'occupe des boutons */
+
+.divbouton {
+    margin: 30px;
+    display: inline-block;
+}
+
+
+/* Gère la position du bouton de droite */
+
+#partie2 {
+    position: absolute;
+    right: 12%;
+}
+
+
+/* Gere le menu pour le mobile */
+
+.menu-mobile {
+    width: 40px;
+    height: 70px;
+    /* Par défault le menu mobile n'est pas visible */
+    display: none;
+    align-items: center;
+    float: right;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+
+/* Créé le bouton du menu déroulant et place*/
+
+.menu-icone,
+.menu-icone:after,
+.menu-icone:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: saddlebrown;
+    position: relative;
+    z-index: 2;
+}
+
+.menu-icone:after {
+    top: 12px;
+}
+
+.menu-icone:before {
+    top: -14px;
+}
+
+
+/*--------------------- KEYFRAMES -------------------*/
+
+
+/* Fait arrivé le contenu du bandeau au centre */
+
+@keyframes menu-g {
+    from {
+        margin-left: 0%;
+    }
+    to {
+        margin-left: 10%;
+    }
+}
+
+@keyframes menu-d {
+    from {
+        margin-right: 0%;
+    }
+    to {
+        margin-right: 10%;
+    }
+}
+
+
+/* Fait apparaitre le main */
+
+@keyframes main-anim {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/*---------------- LES IMAGES -----------------------*/
+
+img {
+    display: flex;
+}
+
+#transaction {
+    width: 90%;
+    margin: auto;
+}
+
+#crypto {
+    /* Pour que l'image des différentes crypto soit au niveau du sous-titre */
+    display: inline-block;
+    width: 3.5em;
+    position: relative;
+    top: 20px;
+    margin-left: 10px;
+}
+
+#ecolo {
+    /* Pour que l'image de l'usine bitcoin soit à droite du texte avec une ombre */
+    width: 80%;
+    max-width: 300px;
+    float: right;
+    padding-left: 30px;
+    filter: drop-shadow(1px 1px 10px black);
+}
+
+
+/*----------------- EN GRAND ECRAN ------------------*/
+
+@media screen and (min-width: 950px) {
+    #partie2 {
+        /* Fixe la position du bouton de droite de l'index */
+        position: relative;
+        left: 290px;
+    }
+}
+
+
+/*---------------- POUR PETIT MENU -----------------*/
+
+
+/* Quand l'écran est au maximum à une taille de 770px */
+
+@media screen and (max-width: 770px) {
+    .menu-mobile {
+        display: flex;
+    }
+    /* Menu déroulant vers la gauche */
+    .menu-droit-petit {
+        /* S'occupe du menu déroulant */
+        position: absolute;
+        top: 0px;
+        right: 0;
+        width: 100px;
+        padding-bottom: 50px;
+        background-color: #FFECB7;
+        border-left: solid #C16300;
+        border-bottom: solid #C16300;
+        opacity: 0;
+        /* Se place au dessus du main */
+        z-index: 1;
+    }
+    .menu-droit-petit > a {
+        /* S'occupe de l'interieur du menu déroulant */
+        color: saddlebrown;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: lato;
+        font-weight: 700;
+        font-size: 15px;
+        margin: 0 8px;
+    }
+    .menu-droit-grand {
+        /* Rend invisible le menu du grand écran */
+        opacity: 0;
+    }
+    .menu-droit-grand {
+        position: absolute;
+        top: 0px;
+        right: 0;
+        width: 100px;
+        padding-bottom: 50px;
+        background-color: #FFECB7;
+        border-left: solid #C16300;
+        border-bottom: solid #C16300;
+    }
+    /* Quand le curseur se trouve sur le menu déroulant */
+    .menu-droit-petit:hover {
+        transition: all 0.5s ease-in-out;
+        display: block;
+        /* Affiche le menu */
+        opacity: 1;
+        padding-top: 67px;
+    }
+    .menu-lien {
+        display: block;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    /* Cache les icones du menu */
+    i {
+        /* Déplace hors de vue les icônes qui du menu posant problème */
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+        visibility: hidden;
+    }
+}
+
+
+/*---------------- POUR MOBILE ----------------*/
+
+@media screen and (max-width: 510px) {
+    main {
+        /* Déplace le main et sont contenu à gauche */
+        min-width: 0px;
+        max-width: 500px;
+        width: 75%;
+        padding-bottom: 80px;
+        margin-left: 0;
+    }
+    .menu {
+        /* Change la hauteur entre le menu et le bandeau */
+        margin-bottom: 40px;
+    }
+    #partie1 {
+        /* Gère le bouton de gauche de l'index */
+        display: block;
+        margin: 30px 0px 30px 63px;
+    }
+    #partie2 {
+        /* Gère le bouton de droite de l'index */
+        display: block;
+        margin: 10px;
+        left: 70px;
+    }
+    .menu-droit-petit {
+        /* Laisse affiché le menu car sinon il est indisponible */
+        opacity: 1;
+        padding-top: 67px;
+    }
+    #ecolo {
+        /* L'image de l'usine Bitcoin se place au centre */
+        padding: 0;
+        margin: auto;
+        float: inherit;
+    }
+}
